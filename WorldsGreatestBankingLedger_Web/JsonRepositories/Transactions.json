@@ -1,0 +1,77 @@
+[
+  {
+    "AccountId": "XR7ZF2N8ODU*^1T1",
+    "Amount": 40.0,
+    "TransactionDate": "2019-05-04T19:28:56.8642951-07:00"
+  },
+  {
+    "AccountId": "XR7ZF2N8ODU*^1T1",
+    "Amount": -500.0,
+    "TransactionDate": "2019-05-04T21:49:45.2428551-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 400.02,
+    "TransactionDate": "2019-05-04T22:10:51.8685736-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": -200.0,
+    "TransactionDate": "2019-05-04T22:26:09.8075586-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 500.0,
+    "TransactionDate": "2019-05-04T22:26:27.1280162-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": -400.0,
+    "TransactionDate": "2019-05-04T22:26:36.3520056-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 500.0,
+    "TransactionDate": "2019-05-04T22:30:37.0842266-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": -401.0,
+    "TransactionDate": "2019-05-04T22:30:43.9499055-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 0.01,
+    "TransactionDate": "2019-05-04T22:30:52.3061509-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": -600.0,
+    "TransactionDate": "2019-05-04T22:33:55.8946493-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 500000.0,
+    "TransactionDate": "2019-05-04T22:35:04.6097984-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 0.09,
+    "TransactionDate": "2019-05-04T22:36:59.0343492-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 0.0,
+    "TransactionDate": "2019-05-04T22:39:54.4869052-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": -43.0,
+    "TransactionDate": "2019-05-04T22:57:16.5221587-07:00"
+  },
+  {
+    "AccountId": "4KB4%LPSVMK64_FF",
+    "Amount": 0.08,
+    "TransactionDate": "2019-05-04T22:57:32.9050492-07:00"
+  }
+]
