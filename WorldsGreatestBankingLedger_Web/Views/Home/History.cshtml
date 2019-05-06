@@ -1,0 +1,35 @@
+﻿@model List<TransactionModel>
+
+<div>
+    @if (Model != null)
+    {
+        <h2>Transaction history for @ViewBag.Name:</h2>
+
+        <table class="table">
+            <tr>
+                <th>Transaction Type</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+
+            </tr>
+            @foreach (TransactionModel transaction in Model)
+            {
+            string transactionType = "Deposit";
+            if(transaction.Amount < 0)
+            {
+            transactionType = "Withdrawl";
+            }
+                <tr>
+                    <td>@transactionType</td>
+                    <td>$@transaction.Amount</td>
+                    <td>@transaction.TransactionDate</td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div><b>You are not logged in! Ya gotta log in to bank.</b></div>
+    }
+</div>

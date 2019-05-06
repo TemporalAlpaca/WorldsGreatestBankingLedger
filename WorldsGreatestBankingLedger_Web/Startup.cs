@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WorldsGreatestBankingLedger_Web.Repositories;
 
 namespace WorldsGreatestBankingLedger_Web
 {
@@ -31,8 +32,12 @@ namespace WorldsGreatestBankingLedger_Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //Set up dependency injection for JSONBankingRepository
+            services.AddTransient<IBankingRepository, JSONBankingRepository>();
+            services.AddSingleton<IBankingRepository, JSONBankingRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,11 +57,12 @@ namespace WorldsGreatestBankingLedger_Web
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            //Set initial page to login screen
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }

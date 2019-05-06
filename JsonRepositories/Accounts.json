@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "XR7ZF2N8ODU*^1T1",
+    "Password": "pass",
+    "Balance": -460.0,
+    "Name": "P. Erson",
+    "Email": "E@mail.com",
+    "Username": "user"
+  },
+  {
+    "Id": "FH2Y5S^AZ75NWUMI",
+    "Password": "pass",
+    "Balance": 0.0,
+    "Name": "Hugh Man",
+    "Email": "person@mail.com",
+    "Username": "newguy2"
+  },
+  {
+    "Id": "@RP?N-22DH4QRH6*",
+    "Password": "pass",
+    "Balance": 0.0,
+    "Name": "name",
+    "Email": "caleb_username",
+    "Username": "test"
+  },
+  {
+    "Id": "2Q1_A%F_KQ!UW?0A",
+    "Password": "pass",
+    "Balance": 73964.0,
+    "Name": "new guy",
+    "Email": "newguy@email.com",
+    "Username": "newguy"
+  },
+  {
+    "Id": "2I-?U^@^FV5%ZCW%",
+    "Password": "nah",
+    "Balance": 0.0,
+    "Name": "person, new",
+    "Email": "nope",
+    "Username": "new_person"
+  },
+  {
+    "Id": "4KB4%LPSVMK64_FF",
+    "Password": "pass",
+    "Balance": 505369.1,
+    "Name": "Caleb Kauffman",
+    "Email": "email@email.com",
+    "Username": "caleb_username"
+  }
+]

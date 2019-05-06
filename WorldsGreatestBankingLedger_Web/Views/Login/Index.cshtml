@@ -1,0 +1,69 @@
+﻿@model AccountModel
+@{
+    ViewData["Title"] = "Welcome to the World's Greatest Bank!";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div>We are proud to be on *Totally Real Bank Digest's Top 10 banks of @DateTime.Now.Year.ToString()!</div>
+<div>We will give you *FREE *MONEY!</div>
+<div>*see About page for details</div>
+
+<main>
+    @if (Model == null || Model.Username == null)
+    {
+        <br />
+        <div class="text-danger"><b>@ViewBag.CreateAccountFailed</b></div>
+        <div class="text-danger"><b>@ViewBag.LoginFailed</b></div>
+        <div class="text-success"><b>@ViewBag.CreateAccountSuccess</b></div>
+
+        <h3><b>Log in</b></h3>
+        <form class="form-horizontal" action="~/Login/Index" method="POST">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Username">Username:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Username, new { @class = "small-text form-control" })
+                </div>
+                <label class="control-label col-sm-2" for="Password">Password:</label>
+                <div class="col-sm-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "small-text form-control" })
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+        </form>
+
+        <h4><b>Create account</b></h4>
+        <form class="form-horizontal" action="~/Login/CreateAccount" method="POST">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Username">Username:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Username, new { @class = "small-text form-control" })
+                </div>
+                <label class="control-label col-sm-2" for="Name">Full Name:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "small-text form-control" })
+                </div>
+                <label class="control-label col-sm-2" for="Email">Email:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "small-text form-control" })
+                </div>
+                <label class="control-label col-sm-2" for="Password">Password:</label>
+                <div class="col-sm-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "small-text form-control" })
+                </div>
+                <label class="control-label col-sm-2" for="Id">Confirm password:</label>
+                <div class="col-sm-10">
+                    @Html.PasswordFor(m => m.Id, new { @class = "small-text form-control" })
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </div>
+            </div>
+        </form>
+    }
+    else
+    {
+        <h3>You are logged in as @Model.Name</h3>
+    }
+</main>

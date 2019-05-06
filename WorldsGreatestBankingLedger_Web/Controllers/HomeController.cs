@@ -5,27 +5,83 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WorldsGreatestBankingLedger_Web.Models;
+using WorldsGreatestBankingLedger_Web.Repositories;
 
 namespace WorldsGreatestBankingLedger_Web.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private static AccountModel currentAccount;
+
+        private IBankingRepository bankingRepository;
+
+        public HomeController(IBankingRepository bankingRepo)
         {
-            return View();
+            bankingRepository = bankingRepo;
+        }
+
+        public IActionResult Index(AccountModel account)
+        {
+            if(account != null && account.Username != null)
+                currentAccount = account;
+
+            return View(currentAccount);
+        }
+
+        public IActionResult Transaction()
+        {
+            if(currentAccount == null || currentAccount.Username == null)
+                return RedirectToAction("Index", "Login");
+
+            ViewBag.Name = currentAccount.Name;
+            TransactionModel transaction = new TransactionModel();
+
+            return View(transaction);
+        }
+
+        [HttpPost]
+        public IActionResult Transaction(TransactionModel transaction)
+        {
+            if (transaction != null && currentAccount != null && currentAccount.Id != null
+                && transaction.Amount != 0)
+            {
+                transaction.AccountId = currentAccount.Id;
+                bankingRepository.InsertTransaction(transaction);
+                return RedirectToAction("History");
+            }
+
+            ViewBag.TransactionFailed = "Transaction Failed. Value cannot be zero.";
+            return View(transaction);
+        }
+
+        public IActionResult History()
+        {
+            if (currentAccount == null || currentAccount.Username == null)
+                return RedirectToAction("Index", "Login");
+
+            List<TransactionModel> transactions = bankingRepository.GetTransactionHistory(currentAccount.Id);
+            ViewBag.Name = currentAccount.Name;
+
+            return View(transactions);
+        }
+
+        public IActionResult Balance()
+        {
+            if (currentAccount == null || currentAccount.Username == null)
+                return RedirectToAction("Index", "Login");
+
+            ViewBag.Name = currentAccount.Name;
+            return View(bankingRepository.GetBalance(currentAccount));
+        }
+
+        public IActionResult LogOut()
+        {
+            currentAccount = null;
+            return RedirectToAction("Index", "Login");
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 

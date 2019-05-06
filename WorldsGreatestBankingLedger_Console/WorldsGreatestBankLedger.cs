@@ -9,7 +9,6 @@ namespace WorldsGreatestBankingLedger_Console
 {
     class WorldsGreatestBankLedger
     {
-        private const int ID_LENGTH = 16;
         private const string WITHDRAWL = "Withdrawl";
         private const string DEPOSIT = "Deposit";
 
@@ -307,8 +306,7 @@ namespace WorldsGreatestBankingLedger_Console
         //This function handles creating a new account.
         private void CreateAccount(string username, string password, string name, string email)
         {
-            string id = GenerateId();
-            AccountModel newAccount = new AccountModel(username, password, name, email, id);
+            AccountModel newAccount = new AccountModel(username, password, name, email);
             bankingRepository.InsertAccount(newAccount);
         }
 
@@ -338,26 +336,5 @@ namespace WorldsGreatestBankingLedger_Console
             Console.Clear();
             Console.WriteLine("You have successfully been logged out.\n");
         }
-
-        //This function creates a unique 16 character ID value for a new user
-        private string GenerateId()
-        {
-            bool idExists = true;
-            string newId = "";
-
-            while (idExists)
-            {
-                Random random = new Random();
-                string characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?-_";
-                //Use linq statement to select a random character string
-                newId = new string(Enumerable.Repeat(characters, ID_LENGTH).Select(str => str[random.Next(str.Length)]).ToArray());
-
-                //Check if id has been generated
-                idExists = bankingRepository.IdExists(newId);
-            }
-
-            return newId;
-        }
-
     }
 }

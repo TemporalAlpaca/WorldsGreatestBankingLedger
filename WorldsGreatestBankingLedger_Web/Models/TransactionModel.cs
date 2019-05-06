@@ -7,6 +7,10 @@ namespace WorldsGreatestBankingLedger_Web.Models
 {
     public class TransactionModel
     {
+        public TransactionModel()
+        {
+            TransactionDate = DateTime.Now;
+        }
         public TransactionModel(string accountId, float amount, DateTime transactionDate)
         {
             AccountId = accountId;

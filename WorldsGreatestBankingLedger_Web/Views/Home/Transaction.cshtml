@@ -1,0 +1,26 @@
+﻿@model TransactionModel
+
+<div>
+    @if (Model != null)
+    {
+        <h2>Money time @ViewBag.Name?</h2>
+        <div>Enter a positive value for a deposit or a negative value for a withdrawl.</div>
+        <br />
+        <div class="text-danger"><b>@ViewBag.TransactionFailed</b></div>
+        <div class="col-sm-12">
+            <div class="col-sm-3">
+                <form class="form-group" action="~/Home/Transaction" method="POST">
+                    <label class="control-label" for="Amount">Amount:</label>
+                    @Html.TextBoxFor(m => m.Amount, new { @class = "form-control" })
+                    <br />
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div><b>You are not logged in! Ya gotta log in to bank.</b></div>
+    }
+</div>
+

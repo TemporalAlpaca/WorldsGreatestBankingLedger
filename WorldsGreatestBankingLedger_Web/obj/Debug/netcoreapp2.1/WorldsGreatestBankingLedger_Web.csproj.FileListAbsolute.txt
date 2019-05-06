@@ -5,7 +5,6 @@ C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankin
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\bin\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.pdb
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\bin\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.Views.dll
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\bin\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.Views.pdb
-C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.csprojAssemblyReference.cache
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.csproj.CoreCompileInputs.cache
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.RazorAssemblyInfo.cache
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.RazorAssemblyInfo.cs
@@ -15,7 +14,6 @@ C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankin
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.TagHelpers.output.cache
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.RazorCoreGenerate.cache
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
@@ -31,3 +29,8 @@ C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankin
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.pdb
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.csproj.CopyComplete
 C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Transaction.g.cshtml.cs
+C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\History.g.cshtml.cs
+C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Balance.g.cshtml.cs
+C:\Users\Caleb\source\repos\WorldsGreatestBankingLedger_Web\WorldsGreatestBankingLedger_Web\obj\Debug\netcoreapp2.1\WorldsGreatestBankingLedger_Web.csprojAssemblyReference.cache
