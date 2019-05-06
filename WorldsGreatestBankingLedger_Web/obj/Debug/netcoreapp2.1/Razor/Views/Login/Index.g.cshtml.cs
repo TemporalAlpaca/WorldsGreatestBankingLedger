@@ -127,7 +127,7 @@ Write(ViewData["Title"]);
             WriteLiteral("        <h3><b>Log in</b></h3>\r\n        ");
             EndContext();
             BeginContext(665, 811, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35cfc9f00288409eae00cde92367f411", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "653ed146d0ec4568b7acb2bb938e27de", async() => {
                 BeginContext(732, 189, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                <label class=\"control-label col-sm-2\" for=\"Username\">Username:</label>\r\n                <div class=\"col-sm-10\">\r\n                    ");
                 EndContext();
@@ -178,7 +178,7 @@ Write(ViewData["Title"]);
             WriteLiteral("        <h4><b>Create account</b></h4>\r\n        ");
             EndContext();
             BeginContext(1528, 1564, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b34297db5ca4e2d8447eb8a07c96bcf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "266937bbcdf7405ea059a8926dcd9a9c", async() => {
                 BeginContext(1603, 189, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                <label class=\"control-label col-sm-2\" for=\"Username\">Username:</label>\r\n                <div class=\"col-sm-10\">\r\n                    ");
                 EndContext();

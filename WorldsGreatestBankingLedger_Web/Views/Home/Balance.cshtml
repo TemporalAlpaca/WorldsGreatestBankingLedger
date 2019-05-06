@@ -3,16 +3,12 @@
 <div>
     <h2>Current Balance for @ViewBag.Name: $@Model</h2>
 
-    if(Model <= 0)
+    @if(Model <= 0)
     {
     <div><b>Oh geez that's not good :(</b></div>
     }
     else
     {
     <div><b>Looking good!</b></div>
-    }
-    else
-    {
-    <div><b>You are not logged in! Ya gotta log in to bank.</b></div>
     }
 </div>
